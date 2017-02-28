@@ -103,7 +103,8 @@ img {
 
 #menu-lateral {
   background-image: url('/assets/images/birds.svg');
-  padding-top: 125px;
+  background-repeat: no-repeat;
+  padding-top: 128px;
   padding-left: 10px;
   font-size: 15pt;
   color: $rosa;
