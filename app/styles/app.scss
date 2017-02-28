@@ -1,10 +1,12 @@
 @import "bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
 
 $rosa_forte: #EAD1D0;
 $rosa: #d36893;
 
 body {
-  font-family: "Purisa","Sawasdee",Helvetica,Arial,sans-serif;
+  //font-family: "Purisa","Sawasdee",Helvetica,Arial,sans-serif;
+  font-family: 'Dancing Script', cursive;
 }
 
 #janaina-e-hugo {
@@ -80,11 +82,16 @@ img {
 .tales {
   width: 100%;
 }
+
+.carousel {
+  max-width: 80%;
+}
+
 .carousel-inner{
   width:100%;
-  max-height: 600px !important;
+  max-height: 600px;
 
   img {
-    max-width: 100% !important;
+    max-width: 100%;
   }
 }
