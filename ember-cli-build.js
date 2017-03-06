@@ -4,7 +4,20 @@ var EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
 module.exports = function(defaults) {
   var app = new EmberApp(defaults, {
+    minifyJS: {
+      enabled: false
+    },
+    minifyCSS: {
+      enabled: false
+    },
+
     // Add options here
+    fingerprint: {
+      exclude: ['vendor.css', 'vendor.js', 'wedding.css', 'wedding.js'],
+      ignore: ['index.html'],
+      prepend: 'http://www.hugobenicio.com.br/wedding/'
+//      enabled: false
+    }
   });
 
   // Use `app.import` to add additional libraries to the generated
