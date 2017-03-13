@@ -35,7 +35,7 @@ module.exports = function(defaults) {
        * 
        * Excluding vendor and wedding js and css (to work with production apache)
        */
-      exclude: ['vendor.css', 'vendor.js', 'wedding.css', 'wedding.js'],
+//      exclude: ['vendor.css', 'vendor.js', 'wedding.css', 'wedding.js'],
 
       /**
        * Default: [] - An array of strings.
@@ -59,7 +59,7 @@ module.exports = function(defaults) {
        * 
        * Prepending the production prefix path to the url's of the sources so that it the correct base path.
        */
-      prepend: 'http://www.hugobenicio.com.br/wedding/'
+      prepend: 'http://www.hugobenicio.com.br/casamento/'
 
       /**
        * Default: ['html', 'css', 'js'] - The file types to replace source code with new checksum file names.
