@@ -1,0 +1,27 @@
+@import "globals";
+
+// #menu-lateral {
+//   position: fixed;
+//   left: 0;
+//   top: 50%;
+//   width: 8em;
+//   margin-top: -2.5em;
+// }
+#menu-lateral {
+  background-image: url('/assets/images/birds.svg');
+  background-repeat: no-repeat;
+  padding-top: 128px;
+  font-size: 15pt;
+  color: $rosa;
+  margin-top: 60px;
+
+  position: fixed;
+  left: 0;
+  width: 13em;
+
+  li {
+    a {
+      color: $rosa;
+    }
+  }
+}

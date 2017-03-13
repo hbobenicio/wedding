@@ -1,61 +1,55 @@
 <div class="container-fluid">
   <div class="row">
-    <div class="col-md-3 col-lg-3">
-      <nav id="menu-lateral">
-        <ul>
-          <li>Sobre nós</li>
-          <li>Cerimônia e Recepção</li>
-          <li>Sobre os padrinhos</li>
-          <li>Lista de presentes</li>
-          <li>RSVP</li>
-          <li>Mapa do Local</li>
-        </ul>
-      </nav>
+    <div class="col-md-2 col-lg-2">
+      foo
     </div>
-    <div class="col-md-9 col-lg-9">
-      {{page-carousel}}
+    <div class="col-md-10 col-lg-10">
+      {{#page-section link='photoslide' type='b'}}
+        {{page-carousel}}
+      {{/page-section}}
+
+      {{#page-section link='local' type='a'}}
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+            <hr class="section-heading-spacer">
+            <div class="clearfix"></div>
+            <h2 class="section-heading">Cerimônia</h2>
+            <p class="lead">20:00</p>
+            <img src="/assets/images/birds.svg" alt="[img] Pássaros" class="img-responsive">
+          </div>
+          <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+            <hr class="section-heading-spacer">
+            <div class="clearfix"></div>
+            <h2 class="section-heading">Festa</h2>
+            <p class="lead">22:00</p>
+            <img src="/assets/images/bonecos.png" alt="[img] Bonecos" class="img-responsive">
+          </div>
+        </div>
+      </div>
+      {{/page-section}}
+
+      {{#page-section link='mapa' type='b'}}
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-3 col-sm-6">
+            <hr class="section-heading-spacer">
+            <div class="clearfix"></div>
+            <h2 class="section-heading">Ilmar Buffet</h2>
+            <p class="lead">Endereço: </p>
+            <p>Rua Miranda Coelho, 1111<br/>Eng. Luciano Cavalcante, Fortaleza - CE</p>
+
+            <img src="/assets/images/passarinhos.png" alt="Hugo e Janaina" class="img-responsive">
+          </div>
+          <div class="col-lg-9 col-sm-6 embed-responsive embed-responsive-16by9">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.1609586950735!2d-38.48814188591824!3d-3.7751343444673817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c74f57cb4d6629%3A0x896b7f5fd2eb3116!2sIlmar+Gourmet+-+Buffet!5e0!3m2!1spt-BR!2sbr!4v1486337891637"
+              class="embed-responsive-item"
+              width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+      {{/page-section}}
+
     </div>
   </div>
 </div>
-
-{{#page-section link='local' type='a'}}
-<div class="container">
-  <div class="row">
-    <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
-      <hr class="section-heading-spacer">
-      <div class="clearfix"></div>
-      <h2 class="section-heading">Cerimônia</h2>
-      <p class="lead">20:00</p>
-      {{!--<img src="/assets/images/bonecos.png" alt="Hugo e Janaina">--}}
-      <img src="/assets/images/birds.svg" alt="Hugo e Janaina">
-    </div>
-    <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-      <hr class="section-heading-spacer">
-      <div class="clearfix"></div>
-      <h2 class="section-heading">Festa</h2>
-      <p class="lead">22:00</p>
-      <img src="/assets/images/bonecos.png" alt="Hugo e Janaina">
-    </div>
-  </div>
-</div>
-{{/page-section}}
-
-{{#page-section link='horario' type='b'}}
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-lg-3 col-sm-6">
-      <hr class="section-heading-spacer">
-      <div class="clearfix"></div>
-      <h2 class="section-heading">Ilmar Buffet</h2>
-      <p class="lead">Endereço: </p>
-      <p>Rua Miranda Coelho, 1111<br/>Eng. Luciano Cavalcante, Fortaleza - CE</p>
-
-      <img src="/assets/images/passarinhos.png" alt="Hugo e Janaina">
-    </div>
-    <div class="col-lg-9 col-sm-6">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.1609586950735!2d-38.48814188591824!3d-3.7751343444673817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c74f57cb4d6629%3A0x896b7f5fd2eb3116!2sIlmar+Gourmet+-+Buffet!5e0!3m2!1spt-BR!2sbr!4v1486337891637"
-        width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-    </div>
-  </div>
-</div>
-{{/page-section}}
