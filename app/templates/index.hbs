@@ -1,55 +1,82 @@
 <div class="container-fluid">
   <div class="row">
     <div id="nav-column" class="col-md-2 col-lg-2">
-      foo
+      <nav id="menu-lateral" class="hidden-xs hidden-sm">
+
+          <ul class="">
+            <li><a href="#sobre">Sobre nós</a></li>
+            <li><a href="#local">Cerimônia e Recepção</a></li>
+            <li><a href="#padrinhos">Sobre os padrinhos</a></li>
+            <li><a href="#lista-presentes">Lista de presentes</a></li>
+            <li><a href="#rsvp">RSVP</a></li>
+            <li><a href="#mapa">Mapa do Local</a></li>
+          </ul>
+
+      </nav>
     </div>
-    <main class="col-md-10 col-lg-10">
-      {{#page-section link='photoslide' type='b'}}
-        {{page-carousel}}
-      {{/page-section}}
+    <div class="col-md-10 col-lg-10">
+      <main>
+        {{#page-section link='photoslide' type='b'}}
+          {{page-carousel}}
+        {{/page-section}}
 
-      {{#page-section link='local' type='a'}}
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
-            <hr class="section-heading-spacer">
-            <div class="clearfix"></div>
-            <h2 class="section-heading">Cerimônia</h2>
-            <p class="lead">20:00</p>
-            <img src="/assets/images/birds.svg" alt="[img] Pássaros" class="img-responsive">
-          </div>
-          <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-            <hr class="section-heading-spacer">
-            <div class="clearfix"></div>
-            <h2 class="section-heading">Festa</h2>
-            <p class="lead">22:00</p>
-            <img src="/assets/images/bonecos.png" alt="[img] Bonecos" class="img-responsive">
+        {{#page-section links='sobre' type='a'}}
+          <header>
+            <h3>Sobre Nós</h3>
+          </header>
+        {{/page-section}}
+
+        {{#page-section links='sobre' type='b'}}
+          <header>
+            <h3>Sobre os Padrinhos</h3>
+          </header>
+        {{/page-section}}
+
+        {{#page-section links='sobre' type='a'}}
+          <header>
+            <h3>Lista de Presentes</h3>
+          </header>
+        {{/page-section}}
+
+        {{#page-section link='local' type='b'}}
+          <header>
+            <h3>Lista de Presentes</h3>
+          </header>
+              {{!--<img src="/assets/images/birds.svg" alt="[img] Pássaros" class="img-responsive">--}}
+        
+        {{/page-section}}
+
+        {{#page-section link='mapa' type='a'}}
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-3 col-sm-6">
+              <hr class="section-heading-spacer">
+              <div class="clearfix"></div>
+              <h2 class="section-heading">Ilmar Buffet</h2>
+              <p class="lead">Endereço: </p>
+              <p>Rua Miranda Coelho, 1111<br/>Eng. Luciano Cavalcante, Fortaleza - CE</p>
+
+              <img src="/assets/images/passarinhos.png" alt="Hugo e Janaina" class="img-responsive">
+            </div>
+            <div class="col-lg-9 col-sm-6 embed-responsive embed-responsive-16by9">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.1609586950735!2d-38.48814188591824!3d-3.7751343444673817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c74f57cb4d6629%3A0x896b7f5fd2eb3116!2sIlmar+Gourmet+-+Buffet!5e0!3m2!1spt-BR!2sbr!4v1486337891637"
+                class="embed-responsive-item"
+                width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
           </div>
         </div>
-      </div>
-      {{/page-section}}
+        {{/page-section}}
 
-      {{#page-section link='mapa' type='b'}}
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-lg-3 col-sm-6">
-            <hr class="section-heading-spacer">
-            <div class="clearfix"></div>
-            <h2 class="section-heading">Ilmar Buffet</h2>
-            <p class="lead">Endereço: </p>
-            <p>Rua Miranda Coelho, 1111<br/>Eng. Luciano Cavalcante, Fortaleza - CE</p>
+        {{#page-section links='sobre' type='b'}}
+          <header>
+            <h3>Confirme sua presença!</h3>
+          </header>
+          <form action="">
 
-            <img src="/assets/images/passarinhos.png" alt="Hugo e Janaina" class="img-responsive">
-          </div>
-          <div class="col-lg-9 col-sm-6 embed-responsive embed-responsive-16by9">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.1609586950735!2d-38.48814188591824!3d-3.7751343444673817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c74f57cb4d6629%3A0x896b7f5fd2eb3116!2sIlmar+Gourmet+-+Buffet!5e0!3m2!1spt-BR!2sbr!4v1486337891637"
-              class="embed-responsive-item"
-              width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-      {{/page-section}}
+          </form>
+        {{/page-section}}
 
-    </main>
+      </main>
+    </div>
   </div>
 </div>
