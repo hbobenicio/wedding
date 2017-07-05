@@ -1,0 +1,19 @@
+@import "globals";
+
+/**
+ * Parallax effect rule.
+ * @see https://www.w3schools.com/howto/howto_css_parallax.asp
+ */
+.hbo-parallax {
+  /* The image used */
+  background-image: url('/assets/images/hugo-e-janaina-md-1170x658.jpg');
+
+  /* Set a specific height */
+  height: 658px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

@@ -2,10 +2,12 @@
 @import url('https://fonts.googleapis.com/css?family=Dancing+Script');
 @import "globals";
 @import "menu-lateral";
+@import "hbo-parallax";
 
 body {
   //font-family: "Purisa","Sawasdee",Helvetica,Arial,sans-serif;
   font-family: 'Dancing Script', cursive;
+  padding-top: 80px;
 }
 
 ul {
@@ -17,6 +19,13 @@ ul {
   font-size: 25pt;
 }
 
+.header-font {
+  font-size: 15pt;
+}
+@media screen and (max-width: 768px) {
+    .header-font { padding-top: 15pt; }
+}
+
 .rosa {
   color: $rosa;
 }
@@ -24,6 +33,10 @@ ul {
 /* fixing the mess up */
 .navbar-right {
   margin-right: 30px;
+}
+
+.navbar-default {
+  border-color: $rosa;
 }
 
 .navbar-left {
@@ -56,8 +69,8 @@ ul {
 
 .section-b {
   //padding: 50px 0;
-  border-top: 1px solid #e7e7e7;
-  border-bottom: 1px solid #e7e7e7;
+  //border-top: 1px solid #e7e7e7;
+  border-bottom: 1px solid $rosa;
 }
 
 .section-heading {
@@ -75,3 +88,9 @@ hr.section-heading-spacer {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 15px 0 rgba(0, 0, 0, 0.5);
   margin-bottom: 15px;
 }
+/*
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 15px 0 rgba(0, 0, 0, 0.5);
+  padding: 5px;
+}
+*/
