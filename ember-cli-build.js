@@ -59,7 +59,7 @@ module.exports = function(defaults) {
        * 
        * Prepending the production prefix path to the url's of the sources so that it the correct base path.
        */
-      prepend: 'http://www.hugobenicio.com.br/casamento/'
+      prepend: 'http://www.hugobenicio.com.br/janaehugo/'
 
       /**
        * Default: ['html', 'css', 'js'] - The file types to replace source code with new checksum file names.

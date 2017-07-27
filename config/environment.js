@@ -44,7 +44,7 @@ module.exports = function(environment) {
 
   if (environment === 'production') {
 //    ENV.rootURL = '/';
-    ENV.routerRootURL = '/casamento';
+    ENV.routerRootURL = '/janaehugo';
   }
 
   return ENV;
