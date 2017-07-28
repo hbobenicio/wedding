@@ -1,38 +1,44 @@
-<div class="container-fluid">
+<div class="container">
   <div class="row">
-    <div id="nav-column" class="col-md-3 col-lg-3">
+
+    <!-- Menu Lateral -->
+    <!-- <div id="nav-column" class="col-md-3 col-lg-3">
       <nav id="menu-lateral" class="hidden-xs hidden-sm">
 
-          <ul class="">
-            <li><a href="#sobre">Sobre nós</a></li>
-            <li><a href="#local">Cerimônia e Recepção</a></li>
-            <li><a href="#padrinhos">Sobre os padrinhos</a></li>
-            <li><a href="#lista-presentes">Lista de presentes</a></li>
-            <li><a href="#rsvp">RSVP</a></li>
-            <li><a href="#mapa">Mapa do Local</a></li>
-          </ul>
-
+        <ul class="">
+          <li><a href="#sobre">Sobre nós</a></li>
+          <li><a href="#local">Cerimônia e Recepção</a></li>
+          <li><a href="#padrinhos">Sobre os padrinhos</a></li>
+          <li><a href="#lista-presentes">Lista de presentes</a></li>
+          <li><a href="#rsvp">RSVP</a></li>
+          <li><a href="#mapa">Mapa do Local</a></li>
+        </ul>
       </nav>
-    </div>
-    <div class="col-md-9 col-lg-9">
-      <main>
-        {{#page-section link='photoslide' type='b'}}
-        <header id="janaina-e-hugo">
-          Janaina <span class="rosa">&amp;</span> Hugo
-        </header>
+    </div> -->
 
-        {{page-carousel}}
+    <!-- Corpo da Página -->
+    <!-- <div class="col-md-9 col-lg-9"> -->
+    <div class="col-md-12">
+      <main>
+
+        <!-- Seção FOTO -->
+        {{#page-section link='photoslide' type='b'}}
+          <header id="janaina-e-hugo">
+            Janaina <span class="rosa">&amp;</span> Hugo
+          </header>
+
+          {{page-carousel}}
         {{/page-section}}
 
         {{#page-section links='sobre' type='a'}}
           <header>
-            <h3 class="section-heading">Sobre Nós</h3>
+            <h2 class="section-heading">Sobre Nós</h2>
           </header>
         {{/page-section}}
 
         {{#page-section links='sobre' type='b'}}
           <header>
-            <h3 class="section-heading">Sobre os Padrinhos</h3>
+            <h2 class="section-heading">Sobre os Padrinhos</h2>
           </header>
 
           <div class="panel panel-default">
@@ -44,7 +50,7 @@
 
         {{#page-section link='local' type='a'}}
           <header>
-            <h3 class="section-heading">Lista de Presentes</h3>
+            <h2 class="section-heading">Lista de Presentes</h2>
           </header>
               {{!--<img src="/assets/images/birds.svg" alt="[img] Pássaros" class="img-responsive">--}}
 
@@ -81,10 +87,13 @@
 
               <form action="">
                 <div class="form-group">
+                  Quero confirmar {{input type="number" min="1" max="4" value=model.rsvpNumeroPessoas}} pessoas
+                </div>
+                <div class="form-group">
                   {{input type="text" class="form-control" value=rsvp placeholder="Vão em casal? Confirme seu par aqui também! :)"}}
                 </div>
                 <div class="text-center">
-                  <button type="submit" class="btn btn-primary">Nós Vamos!</button>
+                  <button type="submit" class="btn btn-primary">Confirmar!</button>
                 </div>
               </form>
 
