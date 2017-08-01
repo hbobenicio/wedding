@@ -1,62 +1,198 @@
-<div class="container">
-  <div class="row">
+<main>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
 
-    <!-- Menu Lateral -->
-    <!-- <div id="nav-column" class="col-md-3 col-lg-3">
-      <nav id="menu-lateral" class="hidden-xs hidden-sm">
+          <!-- Seção FOTO -->
+          {{#page-section link='photoslide' type='b'}}
+            <header id="janaina-e-hugo">
+              Janaina <span class="rosa">&amp;</span> Hugo
+            </header>
 
-        <ul class="">
-          <li><a href="#sobre">Sobre nós</a></li>
-          <li><a href="#local">Cerimônia e Recepção</a></li>
-          <li><a href="#padrinhos">Sobre os padrinhos</a></li>
-          <li><a href="#lista-presentes">Lista de presentes</a></li>
-          <li><a href="#rsvp">RSVP</a></li>
-          <li><a href="#mapa">Mapa do Local</a></li>
-        </ul>
-      </nav>
-    </div> -->
+            {{page-carousel}}
+          {{/page-section}}
+      </div>
+    </div>
+  </div>
 
-    <!-- Corpo da Página -->
-    <!-- <div class="col-md-9 col-lg-9"> -->
-    <div class="col-md-12">
-      <main>
+  <div class="container">
+    <div class="row">
+      {{#page-section links='sobre' type='a'}}
+        <header>
+          <h2 class="section-heading">Sobre Nós</h2>
+        </header>
+        <h2 class="text-center">Amo-te há 1000 anos, e te amarei por outros mil!</h2>
+        <p>
+          Como nos conhecemos? Fomos apresentados um ao outro por meio de nossa madrinha e amiga em comum, Marina. Valeu Marina! :D
+        </p>
+        <p>
+          Nosso primeiro encontro? Um cineminha a 2 sempre ajuda!
+        </p>
+        <p>
+          Nosso primeiro beijo? Aquele pôr-do-sol na ponte metálica estava radiando paixão!
+        </p>
+        <p>
+          Nosso namoro? Uma semana após, aquele luar no Dragão do Mar nos foi inesquecível!
+        </p>
+        <p>
+          O Pedido? Se quiser descobrir, vai ter que adivinhar o número mágico (www.hugobenicio.com.br/adivinhe) ;)
+        </p>
+        <p>
+          E o casamento? Mal podemos esperar! :D
+        </p>
+      {{/page-section}}
+    </div>
 
-        <!-- Seção FOTO -->
-        {{#page-section link='photoslide' type='b'}}
-          <header id="janaina-e-hugo">
-            Janaina <span class="rosa">&amp;</span> Hugo
-          </header>
-
-          {{page-carousel}}
-        {{/page-section}}
-
-        {{#page-section links='sobre' type='a'}}
-          <header>
-            <h2 class="section-heading">Sobre Nós</h2>
-          </header>
-        {{/page-section}}
-
-        {{#page-section links='sobre' type='b'}}
+    {{#page-section links='padrinhos' type='b'}}
+      <div class="row">
           <header>
             <h2 class="section-heading">Sobre os Padrinhos</h2>
           </header>
+      </div>
 
-          <div class="panel panel-default">
-            <div class="panel-body">
-              Lorem Epson
+      <div class="row">
+        <div class="col-md-6">
+          <div class="thumbnail">
+            <img src="/assets/images/padrinhos/leo-e-marcella.jpg" alt="Padrinho Leo" class="img-responsive card-foto" width="164" height="164">
+            <div class="caption">
+              <h3 class="text-center">Leonardo Lins</h3>
+              <p>Frase</p>
             </div>
           </div>
-        {{/page-section}}
+        </div>
+        <div class="col-md-6">
+          <div class="thumbnail">
+            <img src="/assets/images/padrinhos/leo-e-marcella.jpg" alt="Madrinha Marcella" class="img-responsive card-foto" width="164" height="164">
+            <div class="caption">
+              <h3 class="text-center">Marcella Ronai</h3>
+              <p>Frase</p>
+            </div>
+          </div>
+        </div>
+      </div>
 
-        {{#page-section link='local' type='a'}}
-          <header>
-            <h2 class="section-heading">Lista de Presentes</h2>
-          </header>
-              {{!--<img src="/assets/images/birds.svg" alt="[img] Pássaros" class="img-responsive">--}}
+      <div class="row">
+        <div class="col-md-6">
+          <div class="thumbnail">
+            <img src="/assets/images/perfil-padrinho.png" alt="Padrinho" class="img-responsive card-foto" width="164" height="164">
+            <div class="caption">
+              <h3 class="text-center">Lívia Mara</h3>
+              <p>Frase</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="thumbnail">
+            <img src="/assets/images/perfil-padrinho.png" alt="Padrinho" class="img-responsive card-foto" width="164" height="164">
+            <div class="caption">
+              <h3 class="text-center">José Augusto</h3>
+              <p>Frase</p>
+            </div>
+          </div>
+        </div>
+      </div>
 
-        {{/page-section}}
+      <div class="row">
+        <div class="col-md-6">
+          <div class="thumbnail">
+            <img src="/assets/images/perfil-padrinho.png" alt="Padrinho" class="img-responsive card-foto" width="164" height="164">
+            <div class="caption">
+              <h3 class="text-center">Luana</h3>
+              <p>Frase</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="thumbnail">
+            <img src="/assets/images/perfil-padrinho.png" alt="Padrinho" class="img-responsive card-foto" width="164" height="164">
+            <div class="caption">
+              <h3 class="text-center">Ramon</h3>
+              <p>Frase</p>
+            </div>
+          </div>
+        </div>
+      </div>
 
-        {{#page-section link='mapa' type='b'}}
+      <div class="row">
+        <div class="col-md-6">
+          <div class="thumbnail">
+            <img src="/assets/images/perfil-padrinho.png" alt="Padrinho" class="img-responsive card-foto" width="164" height="164">
+            <div class="caption">
+              <h3 class="text-center">Vladeilson</h3>
+              <p>Frase</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="thumbnail">
+            <img src="/assets/images/perfil-padrinho.png" alt="Padrinho" class="img-responsive card-foto" width="164" height="164">
+            <div class="caption">
+              <h3 class="text-center">Everton</h3>
+              <p>Frase</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="thumbnail">
+            <img src="/assets/images/perfil-padrinho.png" alt="Padrinho" class="img-responsive card-foto" width="164" height="164">
+            <div class="caption">
+              <h3 class="text-center">Aninha</h3>
+              <p>Frase</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="thumbnail">
+            <img src="/assets/images/perfil-padrinho.png" alt="Padrinho" class="img-responsive card-foto" width="164" height="164">
+            <div class="caption">
+              <h3 class="text-center">Eberson</h3>
+              <p>Frase</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="thumbnail">
+            <img src="/assets/images/perfil-padrinho.png" alt="Padrinho" class="img-responsive card-foto" width="164" height="164">
+            <div class="caption">
+              <h3 class="text-center">Marina</h3>
+              <p>Frase</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="thumbnail">
+            <img src="/assets/images/perfil-padrinho.png" alt="Padrinho" class="img-responsive card-foto" width="164" height="164">
+            <div class="caption">
+              <h3 class="text-center">Claudinho</h3>
+              <p>Frase</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    {{/page-section}}
+
+    <div class="row">
+      {{#page-section link='local' type='a'}}
+        <header>
+          <h2 class="section-heading">Lista de Presentes</h2>
+        </header>
+            {{!--<img src="/assets/images/birds.svg" alt="[img] Pássaros" class="img-responsive">--}}
+
+      {{/page-section}}
+    </div>
+
+    <div class="row">
+      {{#page-section link='mapa' type='b'}}
+        <header>
+          <h2 class="section-heading">Cerimônia e Festa</h2>
+        </header>
+
         <div class="container-fluid">
           <div class="row">
             <div class="col-lg-3 col-sm-6">
@@ -75,34 +211,34 @@
             </div>
           </div>
         </div>
-        {{/page-section}}
+      {{/page-section}}
+    </div>
 
-        {{#page-section links='sobre' type='a'}}
-          <header>
-            <h3 class="section-heading">Confirme sua presença!</h3>
-          </header>
-          <div class="row">
-            <div class="col-sm-1 col-md-2 col-lg-4"></div>
-            <div class="col-sm-10 col-md-8 col-lg-4">
+    <div class="row">
+      {{#page-section links='sobre' type='a'}}
+        <header>
+          <h2 class="section-heading">Confirme sua presença!</h2>
+        </header>
+        <div class="row">
+          <div class="col-sm-1 col-md-2 col-lg-4"></div>
+          <div class="col-sm-10 col-md-8 col-lg-4">
 
-              <form action="">
-                <div class="form-group">
-                  Quero confirmar {{input type="number" min="1" max="4" value=model.rsvpNumeroPessoas}} pessoas
-                </div>
-                <div class="form-group">
-                  {{input type="text" class="form-control" value=rsvp placeholder="Vão em casal? Confirme seu par aqui também! :)"}}
-                </div>
-                <div class="text-center">
-                  <button type="submit" class="btn btn-primary">Confirmar!</button>
-                </div>
-              </form>
+            <form action="">
+              <div class="form-group">
+                Quero confirmar {{input type="number" min="1" max="4" value=model.rsvpNumeroPessoas}} pessoas
+              </div>
+              <div class="form-group">
+                {{input type="text" class="form-control" value=rsvp placeholder="Vão em casal? Confirme seu par aqui também! :)"}}
+              </div>
+              <div class="text-center">
+                <button type="submit" class="btn btn-primary">Confirmar!</button>
+              </div>
+            </form>
 
-            </div>
-            <div class="col-sm-1 col-md-2 col-lg-4"></div>
           </div>
-        {{/page-section}}
-
-      </main>
+          <div class="col-sm-1 col-md-2 col-lg-4"></div>
+        </div>
+      {{/page-section}}
     </div>
   </div>
-</div>
+</main>
